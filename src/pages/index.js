@@ -1,10 +1,12 @@
 import Layout from "@/component/Layout"
 import Head from "next/head";
 import Image from "next/image";
-import profilePic from "../../public/images/profile/developer-pic-1.png";
+import profilePic from "../../public/images/profile/a54d553c09cf2.png";
 import AnimatedText from "../component/AnimatedText"
 import Link from "next/link";
 import { LinkArrow } from "@/component/Icons";
+import HireMe from "@/component/HireMe";
+import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 
 
 export default function Home() {
@@ -30,11 +32,15 @@ export default function Home() {
             <Link href="/dummy.pdf" target={"_blank"}className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-bold border-transparent hover:border-dark" download={true}>Resume
              <LinkArrow className={"w-6 ml-1"} />
             </Link>
-            <Link className="ml-4 text-lg font-medium capitalize text-dark underline" href="maduraprasad.lk@gmail.com">Contact</Link>
+            <Link className="ml-4 text-lg font-medium capitalize text-dark underline" href="https://www.linkedin.com/in/madura-prasad/" target={"_target"}>Contact</Link>
           </div>
         </div>
         </div>
       </Layout>
+      <HireMe/>
+      <div className="absolute right-8 bottom-8 inline-block w-24">
+        <Image src={lightBulb} alt="madura" className="w-full h-auto"/>
+      </div>
       </main>
     </>
   );
