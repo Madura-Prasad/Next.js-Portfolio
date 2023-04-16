@@ -29,10 +29,10 @@ export default function Home() {
           My career objective is to become a successful software engineer by using my knowledge and skills to develop innovative software solutions that address the requirements of businesses and end-users.
           </p>
           <div className="flex items-center self-start mt-2">
-            <Link href="/Madura Prasad-Resume.pdf" target={"_blank"}className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-bold border-transparent hover:border-dark" download={true}>Resume
+            <Link href="/Madura Prasad-Resume.pdf" target={"_blank"} className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-bold border-transparent hover:border-dark" download={true}>Resume
              <LinkArrow className={"w-6 ml-1"} />
             </Link>
-            <Link className="ml-4 text-lg font-medium capitalize text-dark underline" href="maduraprasad.lk@gmail.com">Contact</Link>
+            <Link className="ml-4 text-lg font-medium capitalize text-dark underline" href="https://www.linkedin.com/in/madura-prasad/"  target={"_blank"}>Contact</Link>
           </div>
         </div>
         </div>
