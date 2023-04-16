@@ -2,6 +2,9 @@ import Layout from "@/component/Layout"
 import Head from "next/head";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/developer-pic-1.png";
+import AnimatedText from "../component/AnimatedText"
+import Link from "next/link";
+import { LinkArrow } from "@/component/Icons";
 
 
 export default function Home() {
@@ -18,13 +21,17 @@ export default function Home() {
         <div className="w-1/2">
           <Image src={profilePic} alt="Madura Prasad" className="w-full h-auto" />
         </div>
-        <div className="w-1/2">
-          <h1>
-          Bringing Your Vision to Life through Code and Design Expertise.
-          </h1>
-          <p>
-          In my role as a proficient full-stack developer, I strive to transform concepts into creative applications. Delve into my most recent projects and articles to see my skills in action, particularly with React.js and web development.
+        <div className="w-1/2 flex flex-col items-center self-center">
+          <AnimatedText text="I'm not a great programmer, I'm just a good programmer with great habits." className="!text-6xl !text-left"/>
+          <p className="my-4 text-base font-medium">
+          My career objective is to become a successful software engineer by using my knowledge and skills to develop innovative software solutions that address the requirements of businesses and end-users.
           </p>
+          <div className="flex items-center self-start mt-2">
+            <Link href="/dummy.pdf" target={"_blank"}className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-bold border-transparent hover:border-dark" download={true}>Resume
+             <LinkArrow className={"w-6 ml-1"} />
+            </Link>
+            <Link className="ml-4 text-lg font-medium capitalize text-dark underline" href="maduraprasad.lk@gmail.com">Contact</Link>
+          </div>
         </div>
         </div>
       </Layout>
