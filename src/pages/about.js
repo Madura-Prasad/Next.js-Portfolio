@@ -49,7 +49,7 @@ const about = () => {
                 Biography
               </h2>
               <p className="text-justify font-semibold">
-                Hello, I am Madura Prasad, I'm a highly motivated software
+                Hello, I am Madura Prasad, Im a highly motivated software
                 engineering graduate with a Bachelor of Science degree. I have
                 experience with various programming languages, including Java,
                 PHP, Springboot, HTML, MYSQL, OOP, Javascript, Android App
