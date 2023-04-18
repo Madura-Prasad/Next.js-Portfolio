@@ -6,7 +6,7 @@ import AnimatedText from "../component/AnimatedText"
 import Link from "next/link";
 import { LinkArrow } from "@/component/Icons";
 import HireMe from "@/component/HireMe";
-import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
+
 
 
 export default function Home() {
@@ -38,9 +38,6 @@ export default function Home() {
         </div>
       </Layout>
       <HireMe/>
-      <div className="absolute right-8 bottom-8 inline-block w-24">
-        <Image src={lightBulb} alt="madura" className="w-full h-auto"/>
-      </div>
       </main>
     </>
   );
