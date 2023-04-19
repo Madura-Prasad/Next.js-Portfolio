@@ -44,7 +44,7 @@ const Education = () => {
             type="BSc in Software Engineering"
             time="2022-2023"
             place="ICBT Campus (Cardiff Metropolitan University) - Colombo 04"
-            info="As a graduate of the Bachelor of Science in Software Engineering program, I possess a deep understanding of software design, development, and maintenance. With I strong foundation in computer science, programming languages, and software development methodologies, I am well-equipped to meet industry standards and customer requirements in designing and developing software applications. I am prepared to contribute to the advancement of the field through I have knowledge and expertise in software engineering principles."
+            info="As a developer, my work involves creating web applications using ReactJS for the front-end and Spring Boot for the back-end. I write, test, and deploy code to meet client requirements, collaborating with other team members to ensure high-quality final products."
           />
 
           <Details
