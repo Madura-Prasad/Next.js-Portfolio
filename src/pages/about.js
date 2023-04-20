@@ -67,7 +67,7 @@ const about = () => {
             </div>
 
             <div className="col-span-2 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark" />
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
               <Image
                 src={profilePic}
                 alt="Madura Prasad"
