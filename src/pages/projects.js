@@ -5,14 +5,21 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import {motion} from "framer-motion";
 import Project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+
+const FramerImage=motion(Image);
+
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return <article className="w-full flex
    items-center justify-between rounded-3xl border
     border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl">
     <div className="absolute top-0 -right-3 -z-10 w-[100%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" />
-    <Link className="w-1/2 cursor-pointer overflow-hidden rounded-lg" href={link} target="_blank"><Image src={img} alt={title} className="w-full h-auto"/></Link>
+    <Link className="w-1/2 cursor-pointer overflow-hidden rounded-lg" href={link} target="_blank"><FramerImage
+    whileHover={{scale:1.05}}
+      transition={{duration:0.2}}
+     src={img} alt={title} className="w-full h-auto"/></Link>
     <div className="w-1/2 flex flex-col items-start justify-between pl-6 ">
         <span className="text-red-500 font-medium text-xl">{type}</span>
         <Link className="hover:underline underline-offset-2" href={link} target="_blank"><h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2></Link>
@@ -25,11 +32,13 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   </article>;
 };
 
-
 const Project = ({ type, title, img, link, github }) => {
     return <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative">
         <div className="absolute top-0 -right-3 -z-10 w-[100%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl" />
-      <Link className="w-full cursor-pointer overflow-hidden rounded-lg" href={link} target="_blank"><Image src={img} alt={title} className="w-full h-auto"/></Link>
+      <Link className="w-full cursor-pointer overflow-hidden rounded-lg" href={link} target="_blank"><FramerImage
+      whileHover={{scale:1.05}}
+      transition={{duration:0.2}}
+       src={img} alt={title} className="w-full h-auto"/></Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
           <span className="text-red-500 font-medium text-xl">{type}</span>
           <Link className="hover:underline underline-offset-2" href={link} target="_blank"><h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2></Link>
@@ -68,7 +77,7 @@ const projects = () => {
 
             />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-4">
                 <Project
                 title="Live Crypto Tracker"
                 img={Project1}
@@ -77,7 +86,16 @@ const projects = () => {
                 github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
                 />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-4">
+            <Project
+                title="Live Crypto Tracker"
+                img={Project1}
+                link="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                type="Project"
+                github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                />
+            </div>
+            <div className="col-span-4">
             <Project
                 title="Live Crypto Tracker"
                 img={Project1}
@@ -97,7 +115,7 @@ const projects = () => {
 
             />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-4">
             <Project
                 title="Live Crypto Tracker"
                 img={Project1}
@@ -106,7 +124,16 @@ const projects = () => {
                 github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
                 />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-4">
+            <Project
+                title="Live Crypto Tracker"
+                img={Project1}
+                link="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                type="Project"
+                github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                />
+            </div>
+            <div className="col-span-4">
             <Project
                 title="Live Crypto Tracker"
                 img={Project1}
@@ -126,7 +153,7 @@ const projects = () => {
 
             />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-4">
             <Project
                 title="Live Crypto Tracker"
                 img={Project1}
@@ -135,7 +162,16 @@ const projects = () => {
                 github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
                 />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-4">
+            <Project
+                title="Live Crypto Tracker"
+                img={Project1}
+                link="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                type="Project"
+                github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                />
+            </div>
+            <div className="col-span-4">
             <Project
                 title="Live Crypto Tracker"
                 img={Project1}
