@@ -21,9 +21,9 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
       transition={{duration:0.2}}
      src={img} alt={title} className="w-full h-auto"/></Link>
     <div className="w-1/2 flex flex-col items-start justify-between pl-6 ">
-        <span className="text-red-500 font-medium text-xl">{type}</span>
+        <span className="text-red-500 font-medium text-xl cursor-pointer">{type}</span>
         <Link className="hover:underline underline-offset-2" href={link} target="_blank"><h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2></Link>
-        <p className="my-2 font-medium text-dark text-justify">{summary}</p>
+        <p className="my-2 font-medium text-dark text-justify cursor-pointer">{summary}</p>
         <div className="mt-2 flex items-center ">
             <Link className="w-10 " href={github} target="_blank"><GithubIcon/></Link>
             <Link className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold" href={link} target="_blank">Visit Project</Link>
@@ -40,7 +40,7 @@ const Project = ({ type, title, img, link, github }) => {
       transition={{duration:0.2}}
        src={img} alt={title} className="w-full h-auto"/></Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
-          <span className="text-red-500 font-medium text-xl">{type}</span>
+          <span className="text-red-500 font-medium text-xl cursor-pointer">{type}</span>
           <Link className="hover:underline underline-offset-2" href={link} target="_blank"><h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2></Link>
           <div className="w-full mt-2 flex items-center justify-between ">
           <Link className="text-lg font-semibold underline underline-offset-2" href={link} target="_blank">Visit</Link>
@@ -63,7 +63,7 @@ const projects = () => {
       </Head>
       <main className="w-full mb-16 flex flex-col items-end justify-center">
         <Layout className="pt-16">
-          <AnimatedText text="Showcase of My Personal Projects." className="mb-16" />
+          <AnimatedText text="Showcase of My Personal Projects." className="mb-16 cursor-pointer" />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32">
             <div className="col-span-12">

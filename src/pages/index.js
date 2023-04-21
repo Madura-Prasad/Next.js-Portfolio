@@ -21,11 +21,11 @@ export default function Home() {
       <Layout className="pt-0">
         <div className="flex items-center justify-between w-full">
         <div className="w-1/2">
-          <Image src={profilePic} alt="Madura Prasad" className="w-full h-auto" />
+          <Image src={profilePic} alt="Madura Prasad" className="w-full h-auto cursor-pointer" />
         </div>
         <div className="w-1/2 flex flex-col items-center self-center">
-          <AnimatedText text="I'm not a great programmer, I'm just a good programmer with great habits." className="!text-6xl !text-left"/>
-          <p className="my-4 text-base font-medium">
+          <AnimatedText text="I'm not a great programmer, I'm just a good programmer with great habits." className="!text-6xl !text-left cursor-pointer"/>
+          <p className="my-4 text-base font-medium cursor-pointer">
           My career objective is to become a successful software engineer by using my knowledge and skills to develop innovative software solutions that address the requirements of businesses and end-users.
           </p>
           <div className="flex items-center self-start mt-2">

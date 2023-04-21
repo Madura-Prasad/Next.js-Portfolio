@@ -44,14 +44,14 @@ const about = () => {
         <Layout className="pt-16">
           <AnimatedText
             text="Exploring my Background, Skills and Passion."
-            className="mb-16"
+            className="mb-16 cursor-pointer"
           />
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-3 flex flex-col items-start justify-start">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
                 Biography
               </h2>
-              <p className="text-justify font-semibold">
+              <p className="text-justify font-semibold cursor-pointer">
                 Hello, I am Madura Prasad, Im a highly motivated software
                 engineering graduate with a Bachelor of Science degree. I have
                 experience with various programming languages, including Java,
@@ -71,14 +71,13 @@ const about = () => {
               <Image
                 src={profilePic}
                 alt="Madura Prasad"
-                className="w-80 h-90 rounded-2xl"
+                className="w-80 h-90 rounded-2xl cursor-pointer"
               />
             </div>
 
-            <div className="col-span-2 flex flex-col items-end justify-between">
-              <div className="flex flex-col items-end justify-center">
+            <div className="col-span-2 flex flex-col items-end justify-between cursor-pointer">
+              <div className="flex flex-col items-end justify-center ">
                 <span className="inline-block text-7xl font-bold">
-                  {" "}
                   <AnimatedNumbers value={34} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
@@ -88,7 +87,6 @@ const about = () => {
 
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold">
-                  {" "}
                   <AnimatedNumbers value={18} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
@@ -98,7 +96,6 @@ const about = () => {
 
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold">
-                  {" "}
                   <AnimatedNumbers value={1} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">

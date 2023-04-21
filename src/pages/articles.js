@@ -11,7 +11,7 @@ const Article = ({ title, date, link }) => {
       initial={{ y: 200 }}
       whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
       viewport={{once:true}}
-      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4
+      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 cursor-pointer
     "
     >
       <Link href={link} target="_blank">
@@ -35,7 +35,7 @@ const articles = () => {
         <Layout className="pt-16">
           <AnimatedText
             text="Collection of My Published Articles."
-            className="mb-16"
+            className="mb-16 cursor-pointer"
           />
           <ul>
             <Article title="Test" date="Test" link="/" />
