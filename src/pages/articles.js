@@ -11,15 +11,15 @@ const Article = ({ title, date, link }) => {
       initial={{ y: 200 }}
       whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
       viewport={{ once: true }}
-      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 cursor-pointer
+      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 cursor-pointer dark:border-light dark:bg-dark
     "
     >
       <Link href={link} target="_blank">
-        <h2 className="capitalize text-xl font-semibold hover:underline">
+        <h2 className="capitalize text-xl font-semibold hover:underline dark:text-light">
           {title}
         </h2>
       </Link>
-      <span className="text-red-500 font-semibold pl-4">{date}</span>
+      <span className="text-red-500 font-semibold pl-4  dark:text-primaryDark">{date}</span>
     </motion.li>
   );
 };
@@ -31,7 +31,7 @@ const articles = () => {
         <title>Madura Prasad | Articles page</title>
         <meta name="description" content="Madura Prasad" />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
+      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden  dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text="Collection of My Published Articles."
@@ -45,7 +45,7 @@ const articles = () => {
             />
             <Article
               title="Getting started with Java Spring Boot data testing using Postman"
-              date="2023 Apr 4"
+              date="2023 Apr 04"
               link="https://medium.com/@maduraprasad/getting-started-with-java-spring-boot-data-testing-using-postman-fb9cdfac5266"
             />
 
@@ -180,11 +180,6 @@ const articles = () => {
               link="https://medium.com/@maduraprasad/a-full-stack-java-developer-is-a-highly-experienced-software-engineer-who-can-work-on-both-the-9d4036d4134b"
             />
 
-            <Article
-              title="From Beginner to Full Stack Java Developer: A Career Roadmap"
-              date="2023 Jan 17"
-              link="https://medium.com/@maduraprasad/a-full-stack-java-developer-is-a-highly-experienced-software-engineer-who-can-work-on-both-the-9d4036d4134b"
-            />
             <Article
               title="Object-Oriented Programming vs Functional Programming: Which is Better for Your Project?"
               date="2023 Jan 17"
