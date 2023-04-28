@@ -18,11 +18,11 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
     <article
       className="w-full flex
    items-center justify-between rounded-3xl border
-    border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl  dark:bg-dark dark:border-light"
+    border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl  dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
     >
-      <div className="absolute top-0 -right-3 -z-10 w-[100%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light" />
+      <div className="absolute top-0 -right-3 -z-10 w-[100%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
       <Link
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
+        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
         href={link}
         target="_blank"
       >
@@ -36,8 +36,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           className="w-full h-auto"
         />
       </Link>
-      <div className="w-1/2 flex flex-col items-start justify-between pl-6 ">
-        <span className="text-red-500 font-medium text-xl cursor-pointer  dark:text-primaryDark">
+      <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6 ">
+        <span className="text-red-500 font-medium text-xl cursor-pointer  dark:text-primaryDark xs:text-base">
           {type}
         </span>
         <Link
@@ -45,11 +45,11 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           href={link}
           target="_blank"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold  dark:text-light">
+          <h2 className="my-2 w-full text-left text-4xl font-bold  dark:text-light sm:text-sm">
             {title}
           </h2>
         </Link>
-        <p className="my-2 font-medium text-dark text-justify cursor-pointer  dark:text-light">
+        <p className="my-2 font-medium text-dark text-justify cursor-pointer  dark:text-light sm:text-sm">
           {summary}
         </p>
         <div className="mt-2 flex items-center ">
@@ -57,7 +57,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
             <GithubIcon />
           </Link>
           <Link
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark"
+            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
             href={link}
             target="_blank"
           >
@@ -71,8 +71,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ type, title, img, link, github }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light">
-      <div className="absolute top-0 -right-3 -z-10 w-[100%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light" />
+    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4">
+      <div className="absolute top-0 -right-3 -z-10 w-[100%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
       <Link
         className="w-full cursor-pointer overflow-hidden rounded-lg"
         href={link}
@@ -88,7 +88,7 @@ const Project = ({ type, title, img, link, github }) => {
         />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-red-500 font-medium text-xl cursor-pointer  dark:text-primaryDark">
+        <span className="text-red-500 font-medium text-xl cursor-pointer  dark:text-primaryDark lg:text-lg md:text-base">
           {type}
         </span>
         <Link
@@ -96,17 +96,17 @@ const Project = ({ type, title, img, link, github }) => {
           href={link}
           target="_blank"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">{title}</h2>
         </Link>
         <div className="w-full mt-2 flex items-center justify-between ">
           <Link
-            className="text-lg font-semibold underline underline-offset-2"
+            className="text-lg font-semibold underline underline-offset-2 md:text-base"
             href={link}
             target="_blank"
           >
             Visit
           </Link>
-          <Link className="w-8" href={github} target="_blank">
+          <Link className="w-8 md:w-6" href={github} target="_blank">
             <GithubIcon />
           </Link>
         </div>
@@ -129,21 +129,12 @@ const projects = () => {
         <Layout className="pt-16">
           <AnimatedText
             text="Showcase of My Personal Projects."
-            className="mb-16 cursor-pointer"
+            className="mb-16 cursor-pointer lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
 
-          <div className="grid grid-cols-12 gap-24 gap-y-32">
-            <div className="col-span-12">
-              <FeaturedProject
-                title="Live Crypto Tracker"
-                img={Project1}
-                summary="The live crypto tracker is a mobile app developed using React Native and CoinGecko API that provides real-time cryptocurrency price monitoring. It features a user-friendly interface, customizable watchlists, price alerts, push notifications, and detailed views of each cryptocurrency. The app aims to provide a reliable and convenient tool for crypto enthusiasts to stay up-to-date and make informed investment decisions."
-                link="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
-                type="Featured Project"
-                github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
-              />
-            </div>
-            <div className="col-span-4">
+          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-12"></div>
+            <div className="col-span-4 sm:col-span-12">
               <Project
                 title="Construction Management App"
                 img={constructionApp}
@@ -152,7 +143,7 @@ const projects = () => {
                 github="https://github.com/Madura-Prasad/Construction-App.git"
               />
             </div>
-            <div className="col-span-4">
+            <div className="col-span-4 sm:col-span-12">
               <Project
                 title="Warehouse Management System"
                 img={Warehouse}
@@ -161,7 +152,7 @@ const projects = () => {
                 github="https://github.com/Madura-Prasad/Warehouse-Desktop-Application.git"
               />
             </div>
-            <div className="col-span-4">
+            <div className="col-span-4 sm:col-span-12">
               <Project
                 title="Live Crypto Tracker"
                 img={Project1}
@@ -170,7 +161,7 @@ const projects = () => {
                 github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
               />
             </div>
-            <div className="col-span-12">
+            <div className="col-span-12 sm:col-span-12">
               <FeaturedProject
                 title="Imperial Educational Center"
                 img={imperial}
@@ -180,7 +171,7 @@ const projects = () => {
                 github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
               />
             </div>
-            <div className="col-span-4">
+            <div className="col-span-4 sm:col-span-12">
               <Project
                 title="Live Crypto Tracker"
                 img={Project1}
@@ -189,7 +180,7 @@ const projects = () => {
                 github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
               />
             </div>
-            <div className="col-span-4">
+            <div className="col-span-4 sm:col-span-12">
               <Project
                 title="Live Crypto Tracker"
                 img={Project1}
@@ -198,7 +189,7 @@ const projects = () => {
                 github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
               />
             </div>
-            <div className="col-span-4">
+            <div className="col-span-4 sm:col-span-12">
               <Project
                 title="Live Crypto Tracker"
                 img={Project1}
@@ -217,7 +208,7 @@ const projects = () => {
                 github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
               />
             </div>
-            <div className="col-span-4">
+            <div className="col-span-4 sm:col-span-12">
               <Project
                 title="Live Crypto Tracker"
                 img={Project1}
@@ -226,7 +217,7 @@ const projects = () => {
                 github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
               />
             </div>
-            <div className="col-span-4">
+            <div className="col-span-4 sm:col-span-12">
               <Project
                 title="Live Crypto Tracker"
                 img={Project1}
@@ -235,7 +226,7 @@ const projects = () => {
                 github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
               />
             </div>
-            <div className="col-span-4">
+            <div className="col-span-4 sm:col-span-12">
               <Project
                 title="Live Crypto Tracker"
                 img={Project1}
