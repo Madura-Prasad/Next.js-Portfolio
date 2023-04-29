@@ -4,6 +4,7 @@ import Head from "next/head";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
+import TransitionEffect from "@/component/TransitionEffect";
 
 const Article = ({ title, date, link }) => {
   return (
@@ -31,6 +32,7 @@ const articles = () => {
         <title>Madura Prasad | Articles page</title>
         <meta name="description" content="Madura Prasad" />
       </Head>
+      <TransitionEffect/>
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden  dark:text-light">
         <Layout className="pt-16">
           <AnimatedText

@@ -10,6 +10,7 @@ import constructionApp from "../../public/images/projects/constructionApp.jpg";
 import Warehouse from "../../public/images/projects/Warehouse.jpg";
 import imperial from "../../public/images/projects/imperial.jpg";
 import Project1 from "../../public/images/projects/dummy.png";
+import TransitionEffect from "@/component/TransitionEffect";
 
 const FramerImage = motion(Image);
 
@@ -125,6 +126,7 @@ const projects = () => {
           content="Madura Prasad | Projects | GitHub | github"
         />
       </Head>
+      <TransitionEffect/>
       <main className="w-full mb-16 flex flex-col items-end justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
