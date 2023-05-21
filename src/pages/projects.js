@@ -7,8 +7,12 @@ import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import constructionApp from "../../public/images/projects/constructionApp.jpg";
-import Warehouse from "../../public/images/projects/warehouse.jpg";
+import Warehouse from "../../public/images/projects/warhouse.jpg";
 import imperial from "../../public/images/projects/imperial.jpg";
+import pos from "../../public/images/projects/pos.jpg";
+import roadtrip from "../../public/images/projects/roadtrip.jpg";
+import woocomerce from "../../public/images/projects/woocomerce.jpg";
+
 import Project1 from "../../public/images/projects/dummy.png";
 import TransitionEffect from "@/component/TransitionEffect";
 
@@ -138,7 +142,7 @@ const projects = () => {
             <div className="col-span-12"></div>
             <div className="col-span-4 sm:col-span-12">
               <Project
-                title="Construction Management App"
+                title="Construction App"
                 img={constructionApp}
                 link="https://github.com/Madura-Prasad/Construction-App.git"
                 type="App Development Project (Campus)"
@@ -147,7 +151,7 @@ const projects = () => {
             </div>
             <div className="col-span-4 sm:col-span-12">
               <Project
-                title="Warehouse Management System"
+                title="Warehouse System"
                 img={Warehouse}
                 link="https://github.com/Madura-Prasad/Warehouse-Desktop-Application.git"
                 type="JAVA OOP Project (Campus)"
@@ -156,11 +160,11 @@ const projects = () => {
             </div>
             <div className="col-span-4 sm:col-span-12">
               <Project
-                title="Live Crypto Tracker"
-                img={Project1}
-                link="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
-                type="Project"
-                github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                title="E Commerce Shop POS System"
+                img={pos}
+                link="https://github.com/Madura-Prasad/E-Commerce-Shop-POS-System.git"
+                type="Personal Project"
+                github="https://github.com/Madura-Prasad/E-Commerce-Shop-POS-System.git"
               />
             </div>
             <div className="col-span-12 sm:col-span-12">
@@ -175,20 +179,20 @@ const projects = () => {
             </div>
             <div className="col-span-4 sm:col-span-12">
               <Project
-                title="Live Crypto Tracker"
-                img={Project1}
-                link="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
-                type="Project"
-                github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                title="Travel Web Site"
+                img={roadtrip}
+                link="https://github.com/Madura-Prasad/Travel-WebSite.git"
+                type="Web Development Project (Campus)"
+                github="https://github.com/Madura-Prasad/Travel-WebSite.git"
               />
             </div>
             <div className="col-span-4 sm:col-span-12">
               <Project
-                title="Live Crypto Tracker"
-                img={Project1}
-                link="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
-                type="Project"
-                github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                title="Wo-Commerce Site"
+                img={woocomerce}
+                link="https://github.com/Madura-Prasad/Laravel-Online-E-Commerce-Store.git"
+                type="Laravel Project (Campus)"
+                github="https://github.com/Madura-Prasad/Laravel-Online-E-Commerce-Store.git"
               />
             </div>
             <div className="col-span-4 sm:col-span-12">
