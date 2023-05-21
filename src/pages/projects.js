@@ -172,9 +172,9 @@ const projects = () => {
                 title="Imperial Educational Center"
                 img={imperial}
                 summary="The Imperial College HD Final Project is a web application developed using PHP, JavaScript, jQuery, and MySQL. The goal of the project is to create a platform that allows students to access various resources related to their studies and interact with each other. The platform features a dashboard where students can view their course schedules, grades, and announcements from their professors. Additionally, students can join discussion forums and chat rooms to collaborate with their peers. The platform also includes a search function that allows students to find relevant resources, such as study guides and past exam papers. The system is designed to be user-friendly and intuitive, with a modern and visually appealing interface. Overall, the Imperial College HD Final Project aims to enhance the learning experience for students and facilitate communication and collaboration within the academic community."
-                link="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                link="https://github.com/Madura-Prasad/Learning-Management-Website.git"
                 type="Higher Diploma Final Project (Campus)"
-                github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                github="https://github.com/Madura-Prasad/Learning-Management-Website.git"
               />
             </div>
             <div className="col-span-4 sm:col-span-12">
@@ -199,9 +199,9 @@ const projects = () => {
               <Project
                 title="Live Crypto Tracker"
                 img={Project1}
-                link="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                link=""
                 type="Project"
-                github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                github=""
               />
             </div>
             <div className="col-span-12">
@@ -209,36 +209,36 @@ const projects = () => {
                 title="Live Crypto Tracker"
                 img={Project1}
                 summary="The live crypto tracker is a mobile app developed using React Native and CoinGecko API that provides real-time cryptocurrency price monitoring. It features a user-friendly interface, customizable watchlists, price alerts, push notifications, and detailed views of each cryptocurrency. The app aims to provide a reliable and convenient tool for crypto enthusiasts to stay up-to-date and make informed investment decisions."
-                link="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                link=""
                 type="Featured Project"
-                github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                github=""
               />
             </div>
             <div className="col-span-4 sm:col-span-12">
               <Project
                 title="Live Crypto Tracker"
                 img={Project1}
-                link="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                link=""
                 type="Project"
-                github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                github=""
               />
             </div>
             <div className="col-span-4 sm:col-span-12">
               <Project
                 title="Live Crypto Tracker"
                 img={Project1}
-                link="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                link=""
                 type="Project"
-                github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                github=""
               />
             </div>
             <div className="col-span-4 sm:col-span-12">
               <Project
                 title="Live Crypto Tracker"
                 img={Project1}
-                link="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                link=""
                 type="Project"
-                github="https://github.com/Madura-Prasad/Live-Crypto-Tracker.git"
+                github=""
               />
             </div>
           </div>
