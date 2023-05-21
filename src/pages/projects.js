@@ -7,7 +7,7 @@ import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import constructionApp from "../../public/images/projects/constructionApp.jpg";
-import Warehouse from "../../public/images/projects/Warehouse.jpg";
+import Warehouse from "../../public/images/projects/warehouse.jpg";
 import imperial from "../../public/images/projects/imperial.jpg";
 import Project1 from "../../public/images/projects/dummy.png";
 import TransitionEffect from "@/component/TransitionEffect";
