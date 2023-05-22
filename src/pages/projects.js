@@ -188,7 +188,7 @@ const projects = () => {
             </div>
             <div className="col-span-4 sm:col-span-12">
               <Project
-                title="Wo-Commerce Site"
+                title="Woo-Commerce Site"
                 img={woocomerce}
                 link="https://github.com/Madura-Prasad/Laravel-Online-E-Commerce-Store.git"
                 type="Laravel Project (Campus)"
