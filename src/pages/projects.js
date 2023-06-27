@@ -7,11 +7,11 @@ import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import constructionApp from "../../public/images/projects/constructionApp.png";
-import Warehouse from "../../public/images/projects/warhouse.jpg";
-import imperial from "../../public/images/projects/imperial.jpg";
-import pos from "../../public/images/projects/pos.jpg";
+import Warehouse from "../../public/images/projects/warhouse.png";
+import imperial from "../../public/images/projects/imperial.png";
+import pos from "../../public/images/projects/pos.png";
 import roadtrip from "../../public/images/projects/roadtrip.png";
-import woocomerce from "../../public/images/projects/woocomerce.jpg";
+import woocomerce from "../../public/images/projects/woocomerce.png";
 
 import Project1 from "../../public/images/projects/dummy.png";
 import TransitionEffect from "@/component/TransitionEffect";
