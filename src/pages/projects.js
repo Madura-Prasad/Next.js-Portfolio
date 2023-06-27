@@ -6,11 +6,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-import constructionApp from "../../public/images/projects/constructionApp.jpg";
+import constructionApp from "../../public/images/projects/constructionApp.png";
 import Warehouse from "../../public/images/projects/warhouse.jpg";
 import imperial from "../../public/images/projects/imperial.jpg";
 import pos from "../../public/images/projects/pos.jpg";
-import roadtrip from "../../public/images/projects/roadtrip.jpg";
+import roadtrip from "../../public/images/projects/roadtrip.png";
 import woocomerce from "../../public/images/projects/woocomerce.jpg";
 
 import Project1 from "../../public/images/projects/dummy.png";
