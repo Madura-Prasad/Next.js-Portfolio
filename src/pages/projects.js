@@ -163,7 +163,7 @@ const projects = () => {
                 title="E Commerce Shop POS System"
                 img={pos}
                 link="https://github.com/Madura-Prasad/E-Commerce-Shop-POS-System.git"
-                type="PHP Project (Personal Project)"
+                type="PHP Project (Personal)"
                 github="https://github.com/Madura-Prasad/E-Commerce-Shop-POS-System.git"
               />
             </div>
