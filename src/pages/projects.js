@@ -195,7 +195,7 @@ const projects = () => {
                 github="https://github.com/Madura-Prasad/Laravel-Online-E-Commerce-Store.git"
               />
             </div>
-            <div className="col-span-4 sm:col-span-12">
+            {/* <div className="col-span-4 sm:col-span-12">
               <Project
                 title="Live Crypto Tracker"
                 img={Project1}
@@ -240,7 +240,7 @@ const projects = () => {
                 type="Project"
                 github=""
               />
-            </div>
+            </div> */}
           </div>
         </Layout>
       </main>
