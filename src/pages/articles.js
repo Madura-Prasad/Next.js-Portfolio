@@ -131,7 +131,7 @@ const articles = () => {
 
             <Article
               title="In-Demand and High-Paying Programming Jobs for the Future"
-              date="2023 jan 20"
+              date="2023 Jan 20"
               link="https://medium.com/@maduraprasad/depending-on-criteria-like-location-industry-and-experience-expertise-there-are-a-number-of-33aa3bd238d8"
             />
 
@@ -143,7 +143,7 @@ const articles = () => {
 
             <Article
               title="Navigating the Road to Success: How to Choose a Career Path for Students"
-              date="2023 jan 19"
+              date="2023 Jan 19"
               link="https://medium.com/@maduraprasad/choosing-a-career-path-for-a-student-can-be-a-daunting-task-but-with-the-right-guidance-and-f89cf0306e83"
             />
 
