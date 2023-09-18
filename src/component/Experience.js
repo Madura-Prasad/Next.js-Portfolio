@@ -45,7 +45,7 @@ const Experience = () => {
             position="Software Engineer Intern"
             companyLink="https://www.linkedin.com/company/mobios-lk/"
             company="mobiOs Private Limited"
-            time="2023 - 2023"
+            time="2023-2023"
             address="Colombo 05, Western"
             work="As a developer, my work involves creating web applications using ReactJS for the front-end and Spring Boot for the back-end. I write, test, and deploy code to meet client requirements, collaborating with other team members to ensure high-quality final products."
           />
