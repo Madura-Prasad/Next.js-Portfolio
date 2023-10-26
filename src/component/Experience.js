@@ -41,16 +41,7 @@ const Experience = () => {
         style={{scaleY:scrollYProgress}}
         className="absolute left-9 top-1 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]"/>
         <ul className="w-full flex flex-col items-start justify-between ml-5 xs:ml-2">
-          <Details
-            position="Software Engineer Intern"
-            companyLink="https://www.linkedin.com/company/mobios-lk/"
-            company="mobiOs Private Limited"
-            time="2023-2023"
-            address="Colombo 05, Western"
-            work="As a developer, my work involves creating web applications using ReactJS for the front-end and Spring Boot for the back-end. I write, test, and deploy code to meet client requirements, collaborating with other team members to ensure high-quality final products."
-          />
-
-          
+        {/* add My experience */}
         </ul>
       </div>
     </div>
