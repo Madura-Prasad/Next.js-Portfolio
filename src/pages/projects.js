@@ -12,6 +12,7 @@ import imperial from "../../public/images/projects/imperial.png";
 import pos from "../../public/images/projects/pos.png";
 import roadtrip from "../../public/images/projects/roadtrip.png";
 import woocomerce from "../../public/images/projects/woocomerce.png";
+import final from "../../public/images/projects/final.png";
 
 import Project1 from "../../public/images/projects/dummy.png";
 import TransitionEffect from "@/component/TransitionEffect";
@@ -22,7 +23,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
     <article
       className="w-full flex
-   items-center justify-between rounded-3xl border
+    items-center justify-between rounded-3xl border
     border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl  dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
     >
       <div className="absolute top-0 -right-3 -z-10 w-[100%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
@@ -101,7 +102,9 @@ const Project = ({ type, title, img, link, github }) => {
           href={link}
           target="_blank"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+            {title}
+          </h2>
         </Link>
         <div className="w-full mt-2 flex items-center justify-between ">
           <Link
@@ -130,16 +133,24 @@ const projects = () => {
           content="Madura Prasad | Projects | GitHub | github"
         />
       </Head>
-      <TransitionEffect/>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-end justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text="Showcase of My Personal Projects."
             className="mb-16 cursor-pointer lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
-
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-            <div className="col-span-12"></div>
+            <div className="col-span-12 sm:col-span-12">
+              <FeaturedProject
+                title="DocFinder Appointment System"
+                img={final}
+                summary="The DocFinder Appointment System is a well-rounded final project that incorporates essential software development principles and technologies. It employs role-based authentication for secure user access and utilizes Object-Oriented Programming concepts for a modular and scalable codebase. A Source Control System manages versioning, while unit testing ensures component reliability. Build Servers automate the build process, and coding standards maintain a uniform code style. Loggers capture runtime information for effective debugging, and Java Mail Sender facilitates system communication. Robust exception handling ensures error resilience. In essence, the project integrates these elements to create a secure, efficient, and maintainable healthcare appointment management system, showcasing a comprehensive understanding of key software development practices."
+                link="https://github.com/Madura-Prasad/Diabetes-Prediction.git"
+                type="Bsc. Final Project (Campus)"
+                github="https://github.com/Madura-Prasad/Diabetes-Prediction.git"
+              />
+            </div>
             <div className="col-span-4 sm:col-span-12">
               <Project
                 title="Construction App"
@@ -195,52 +206,6 @@ const projects = () => {
                 github="https://github.com/Madura-Prasad/Laravel-Online-E-Commerce-Store.git"
               />
             </div>
-            {/* <div className="col-span-4 sm:col-span-12">
-              <Project
-                title="Live Crypto Tracker"
-                img={Project1}
-                link=""
-                type="Project"
-                github=""
-              />
-            </div>
-            <div className="col-span-12">
-              <FeaturedProject
-                title="Live Crypto Tracker"
-                img={Project1}
-                summary="The live crypto tracker is a mobile app developed using React Native and CoinGecko API that provides real-time cryptocurrency price monitoring. It features a user-friendly interface, customizable watchlists, price alerts, push notifications, and detailed views of each cryptocurrency. The app aims to provide a reliable and convenient tool for crypto enthusiasts to stay up-to-date and make informed investment decisions."
-                link=""
-                type="Featured Project"
-                github=""
-              />
-            </div>
-            <div className="col-span-4 sm:col-span-12">
-              <Project
-                title="Live Crypto Tracker"
-                img={Project1}
-                link=""
-                type="Project"
-                github=""
-              />
-            </div>
-            <div className="col-span-4 sm:col-span-12">
-              <Project
-                title="Live Crypto Tracker"
-                img={Project1}
-                link=""
-                type="Project"
-                github=""
-              />
-            </div>
-            <div className="col-span-4 sm:col-span-12">
-              <Project
-                title="Live Crypto Tracker"
-                img={Project1}
-                link=""
-                type="Project"
-                github=""
-              />
-            </div> */}
           </div>
         </Layout>
       </main>

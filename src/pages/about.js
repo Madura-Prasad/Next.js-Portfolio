@@ -81,7 +81,7 @@ const about = () => {
             <div className="col-span-2 flex flex-col items-end justify-between cursor-pointer xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumbers value={23} />+
+                  <AnimatedNumbers value={43} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light xl:text-center md:text-lg sm:text-base xs:text-sm">
                   Satisfied Clients
@@ -90,7 +90,7 @@ const about = () => {
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumbers value={28} />+
+                  <AnimatedNumbers value={56} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light xl:text-center md:text-lg sm:text-base xs:text-sm">
                   Projects Completed
