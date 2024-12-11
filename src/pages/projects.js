@@ -13,8 +13,9 @@ import pos from "../../public/images/projects/pos.png";
 import roadtrip from "../../public/images/projects/roadtrip.png";
 import woocomerce from "../../public/images/projects/woocomerce.png";
 import final from "../../public/images/projects/final.png";
-
-import Project1 from "../../public/images/projects/dummy.png";
+import stress from "../../public/images/projects/stress.png";
+import advancepro from "../../public/images/projects/advancedprogamming.png";
+import nlp from "../../public/images/projects/nlp.png";
 import TransitionEffect from "@/component/TransitionEffect";
 
 const FramerImage = motion(Image);
@@ -151,6 +152,47 @@ const projects = () => {
                 github="https://github.com/Madura-Prasad/Diabetes-Prediction.git"
               />
             </div>
+
+            <div className="col-span-4 sm:col-span-12">
+              <Project
+                title="Bumble Bee"
+                img={advancepro}
+                link="https://github.com/Madura-Prasad/Bumble-Bee-Loan-System.git"
+                type="Advanced Programming Project (Campus)"
+                github="https://github.com/Madura-Prasad/Bumble-Bee-Loan-System.git"
+              />
+            </div>
+            <div className="col-span-4 sm:col-span-12">
+              <Project
+                title="NLP Tweet Disaster"
+                img={nlp}
+                link="https://github.com/Madura-Prasad/NLP-Machine-Learning-Model.git"
+                type="Computational Intelligence Project (Campus)"
+                github="https://github.com/Madura-Prasad/NLP-Machine-Learning-Model.git"
+              />
+            </div>
+            <div className="col-span-4 sm:col-span-12">
+              <Project
+                title="Stress Detection"
+                img={stress}
+                link="https://github.com/Madura-Prasad/Stress-Detection-ML.git"
+                type="Thymeleaf Project (Personal)"
+                github="https://github.com/Madura-Prasad/Stress-Detection-ML.git"
+              />
+            </div>
+
+            <div className="col-span-12 sm:col-span-12">
+              <FeaturedProject
+                title="Imperial Educational Center"
+                img={imperial}
+                summary="The Imperial College HD Final Project is a web application developed using PHP, JavaScript, jQuery, and MySQL. The goal of the project is to create a platform that allows students to access various resources related to their studies and interact with each other. The platform features a dashboard where students can view their course schedules, grades, and announcements from their professors. Additionally, students can join discussion forums and chat rooms to collaborate with their peers. The platform also includes a search function that allows students to find relevant resources, such as study guides and past exam papers. The system is designed to be user-friendly and intuitive, with a modern and visually appealing interface. Overall, the Imperial College HD Final Project aims to enhance the learning experience for students and facilitate communication and collaboration within the academic community."
+                link="https://github.com/Madura-Prasad/Learning-Management-Website.git"
+                type="Higher Diploma Final Project (Campus)"
+                github="https://github.com/Madura-Prasad/Learning-Management-Website.git"
+              />
+            </div>
+
+            
             <div className="col-span-4 sm:col-span-12">
               <Project
                 title="Construction App"
@@ -178,16 +220,7 @@ const projects = () => {
                 github="https://github.com/Madura-Prasad/E-Commerce-Shop-POS-System.git"
               />
             </div>
-            <div className="col-span-12 sm:col-span-12">
-              <FeaturedProject
-                title="Imperial Educational Center"
-                img={imperial}
-                summary="The Imperial College HD Final Project is a web application developed using PHP, JavaScript, jQuery, and MySQL. The goal of the project is to create a platform that allows students to access various resources related to their studies and interact with each other. The platform features a dashboard where students can view their course schedules, grades, and announcements from their professors. Additionally, students can join discussion forums and chat rooms to collaborate with their peers. The platform also includes a search function that allows students to find relevant resources, such as study guides and past exam papers. The system is designed to be user-friendly and intuitive, with a modern and visually appealing interface. Overall, the Imperial College HD Final Project aims to enhance the learning experience for students and facilitate communication and collaboration within the academic community."
-                link="https://github.com/Madura-Prasad/Learning-Management-Website.git"
-                type="Higher Diploma Final Project (Campus)"
-                github="https://github.com/Madura-Prasad/Learning-Management-Website.git"
-              />
-            </div>
+            
             <div className="col-span-4 sm:col-span-12">
               <Project
                 title="Travel Web Site"

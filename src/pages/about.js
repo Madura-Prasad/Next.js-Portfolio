@@ -7,6 +7,7 @@ import profilePic from "../../public/images/profile/1111.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "../component/Skills"
 import Experience from "../component/Experience"
+import Certificate from "../component/Certificate"
 import Education from "@/component/Education";
 import TransitionEffect from "@/component/TransitionEffect";
 
@@ -54,17 +55,7 @@ const about = () => {
                 Biography
               </h2>
               <p className="text-justify font-semibold cursor-pointer">
-                Hello, I am Madura Prasad, Im a highly motivated software
-                engineering graduate with a Bachelor of Science degree. I have
-                experience with various programming languages, including Java,
-                PHP, Springboot, HTML, MYSQL, OOP, Javascript, Android App
-                Development, React JS, and React Native. My career objective is
-                to become a successful software engineer by using my knowledge
-                and skills to develop innovative software solutions that address
-                the requirements of businesses and end-users. With their
-                education and experience, Madura Prasad is well-positioned to
-                achieve their professional goals and excel in the software
-                engineering industry.
+              Graduate Software Engineer with a strong foundation in Java and Spring Boot, seeking a Software Engineer Intern position to further develop skills in software design, development, and testing. I am eager to gain valuable hands-on experience, both in individual and team settings, and am committed to delivering maximum effort and high-quality results in all tasks. Passionate about expanding technical expertise and contributing to innovative software solutions.
               </p>
             </div>
 
@@ -108,8 +99,9 @@ const about = () => {
             </div>
           </div>
           <Skills/>
-          {/* <Experience/> */}
+          <Experience/> 
           <Education/>
+          <Certificate/>
         </Layout>
       </main>
     </>

@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useScroll, motion } from "framer-motion";
 import LiIcon from "./LiIcon";
 
-const Details = ({ type, time, place, info }) => {
+const Details = ({ type, time, place, info,grade }) => {
   const ref = useRef(null);
   return (
     <li
@@ -16,9 +16,11 @@ const Details = ({ type, time, place, info }) => {
         transition={{ duration: 0.5, type: "spring" }}
       >
         <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">{type}</h3>
+        <p className="font-bold">Grade: {grade}</p> 
         <span className="capitalize font-medium text-dark/75  dark:text-primaryDark xs:text-sm">
           {time} | {place}
         </span>
+        
         <p className="font-medium w-full text-justify">{info}</p>
       </motion.div>
     </li>
@@ -42,6 +44,7 @@ const Education = () => {
         <ul className="w-full flex flex-col items-start justify-between ml-5 xs:ml-2">
           <Details
             type="BSc in Software Engineering"
+            grade="First Class"
             time="2022-2023"
             place="ICBT Campus (Cardiff Metropolitan University) - Colombo 04"
             info="As a graduate of the Bachelor of Science in Software Engineering program, I possess a deep understanding of software design, development, and maintenance. With I strong foundation in computer science, programming languages, and software development methodologies, I am well-equipped to meet industry standards and customer requirements in designing and developing software applications. I am prepared to contribute to the advancement of the field through I have knowledge and expertise in software engineering principles."
@@ -49,6 +52,7 @@ const Education = () => {
 
           <Details
             type="HD in Computing and Software Engineering"
+            grade="Upper Second Class"
             time="2020-2022"
             place="ICBT Campus - Colombo 04"
             info="As a graduate of the Higher Diploma in Software Engineering program, I have developed a solid foundation in software development, programming languages, and software engineering principles. I possess practical skills in designing, developing, and testing software applications, and are prepared to contribute to the industry through I have knowledge and expertise.  education has equipped I to meet the demands of a rapidly evolving technological landscape."
@@ -56,6 +60,7 @@ const Education = () => {
 
           <Details
             type="Advanced Level"
+            grade="B1 C2 (Commerce Stream)"
             time="2016-2019"
             place="Mahanama College - Colombo 03"
             info="As a graduate of the Advance level in Commerce stream, I have gained a deep understanding of business principles and practices. I possess practical skills in financial accounting, economics, and business management, and are well-equipped to pursue further studies in commerce or enter the workforce. I'm education has prepared for a wide range of careers in the business world."
@@ -63,6 +68,7 @@ const Education = () => {
 
           <Details
             type="Ordinary Level"
+            grade="A3 B2 C4"
             time="2012-2015"
             place="Mahanama College - Colombo 03"
             info="As a graduate of the Ordinary level, I have completed a crucial stage of I education. I have gained a foundational understanding of various subjects and developed essential skills such as reading, writing, and arithmetic. I'm education has prepared to pursue further studies or enter the workforce with basic knowledge and skills."
