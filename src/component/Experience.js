@@ -53,6 +53,18 @@ const Experience = () => {
         <ul className="w-full flex flex-col items-start justify-between ml-5 xs:ml-2">
           {/* add My experience */}
 
+
+          <Details
+            position="Application Developer Intern"
+            company="Darley Butler & Co. Ltd"
+            companyLink="https://www.ebcreasy.com/index.php/darley-butler-co-ltd/"
+            time="Feb 2025-Present"
+            address="OnSite"
+            work="
+            I work as an Application Developer, specializing in C#, .NET, and Python-based systems. My role involves designing, developing, and maintaining software applications, ensuring they are efficient, scalable, and user-friendly. I work on backend development, API integrations, database management, and optimizing system performance to meet business needs. Additionally, I collaborate with teams to implement innovative solutions and improve existing applications."
+          />
+
+
           <Details
             position="Freelancing"
             company="Assignment Geek"
